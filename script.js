@@ -17,7 +17,8 @@ async function checkWheather(city) {
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML =
       Math.round(data.main.temp) + "°C";
-    document.querySelector(".humidity").innerHTML = data.wind.speed + " km/h";
+    document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
+    document.querySelector(".humidity".innerHTML = data.humidity + "%";
 
     console.log(data.weather[0].main);
     if (data.weather[0].main == "Clouds") {
