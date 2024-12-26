@@ -21,15 +21,15 @@ async function checkWheather(city) {
 
     console.log(data.weather[0].main);
     if (data.weather[0].main == "Clouds") {
-      weatherIcon.src = "Weather_Images/clouds.png";
+      weatherIcon.src = "https://vardaansharma18.github.io/Weather_App/clouds.png";
     } else if (data.weather[0].main == "Clear") {
-      weatherIcon.src = "Weather_Images/clear.png";
+      weatherIcon.src = "https://vardaansharma18.github.io/Weather_App/clear.png";
     } else if (data.weather[0].main == "Rain") {
-      weatherIcon.src = "Weather_Images/rain.png";
+      weatherIcon.src = "https://vardaansharma18.github.io/Weather_App/rain.png";
     } else if (data.weather[0].main == "Drizzle") {
-      weatherIcon.src = "Weather_Images/drizzle.png";
+      weatherIcon.src = "https://vardaansharma18.github.io/Weather_App/drizzle.png";
     } else if (data.weather[0].main == "Mist") {
-      weatherIcon.src = "Weather_Images/mist.png";
+      weatherIcon.src = "https://vardaansharma18.github.io/Weather_App/mist.png";
     }
 
     document.querySelector(".weather").style.display = "block";
